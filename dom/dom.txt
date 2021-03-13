@@ -1,0 +1,5 @@
+DOCUMENT OBJECT MODEL
+
+1) Tree of nodes/elements created by browser.
+2) JavaScript can be used to read/write/manipulate to the Document
+3) Object Oriented Representation
