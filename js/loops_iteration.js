@@ -1,18 +1,18 @@
 //FOR LOOP
 
-for (let i = 1; i < 10; i++ ) {
-  if (i === 2) {
-    console.log('this is number 2');
-    continue;
-  }
+// for (let i = 1; i < 10; i++ ) {
+//   if (i === 2) {
+//     console.log('this is number 2');
+//     continue;
+//   }
 
-  if (i === 5) {
-    console.log('Stoping the loop');
-    break;
-  }
+//   if (i === 5) {
+//     console.log('Stoping the loop');
+//     break;
+//   }
 
-  console.log('Number ' + i);
-}
+//   console.log('Number ' + i);
+// }
 
 //WHILE LOOP
 
@@ -44,24 +44,25 @@ for (let i = 0; i < cars.length; i++) {
 
 //using forEach loop
 cars.forEach(function(element, index, cars) {
+  console.log(element);
   console.log(`${index} : ${element}`);
-  console.log(cars);
+  // console.log(cars);
 });
 
 
 //MAP
-// const users = [
-//   {id: 1, name: 'John'},
-//   {id: 2, name: 'Sara'},
-//   {id: 3, name: 'Mo'},
-//   {id: 4, name: 'Steve'}
-// ]
+const users = [
+  {id: 1, name: 'John'},
+  {id: 2, name: 'Sara'},
+  {id: 3, name: 'Mo'},
+  {id: 4, name: 'Steve'}
+]
 
-// const ids = users.map(function (user) {
-//   return user.id;
-// });
+const ids = users.map(function (user) {
+  return user.id;
+});
 
-// console.log(ids);
+console.log(ids);
 
 
 //FOR IN LOOP
@@ -76,3 +77,19 @@ const user = {
 for(let x in user) {
   console.log(`${x} : ${user[x]}`);
 }
+
+
+/**
+ * Difference between the forin and forof loop in js?
+ * 
+ * Reference answer -
+ * https://stackoverflow.com/questions/29285897/what-is-the-difference-between-for-in-and-for-of-statements#:~:text=Difference%20for..in%20and%20for,values%20of%20an%20iterable%20object.
+ * 
+ * 1) Basically for..in loop iterates over all enumerable property keys 
+ * of an object.
+ * 
+ * 2) for..of loop iterates over the values of an iterable object. Examples
+ * of iterable objects are arrays, strings, and NodeLists.
+ * 
+ * 
+ */

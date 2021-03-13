@@ -18,6 +18,11 @@ val = String([1,2,3,4,5]);
 val = (5).toString();
 val = (true).toString();
 
+//Or simply wrap the value with single or double quotes
+val = '3424';
+val = "true";
+console.log(typeof val);
+
 //String to number
 val = Number('5');
 val = Number(true);     //1
@@ -33,7 +38,7 @@ val = parseFloat('100.324');
 console.log(val);
 console.log(typeof val);
 //console.log(val.length);
-console.log(val.toFixed()); //only works on number
+console.log(val.toFixed(5)); //only works on number
 
 
 //TYPE COERCION

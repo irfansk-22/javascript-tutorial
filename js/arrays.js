@@ -11,6 +11,7 @@ let val;
 
 //Get array length
 val = numbers.length;
+console.log(val);
 
 //Check if is array
 val = Array.isArray(numbers);
@@ -24,6 +25,7 @@ numbers[2] = 100;
 
 //Find index of value
 val = numbers.indexOf(432);
+console.log(val);   //will give -1 as 432 is not present in the array
 
 //MUTATING ARRAYS
 //Add on the end
@@ -37,15 +39,19 @@ numbers.pop();
 
 //Take from the front
 numbers.shift();
+console.log(numbers);
 
 //Splice values
-numbers.splice(1,1);
+numbers.splice(1,3);
+console.log(numbers);
 
 //Reverse
 numbers.reverse();
+console.log(numbers);
 
 //Concatenate array
 val = numbers.concat(arrayOld);
+console.log(val);
 
 //Sorting arrays
 val = fruit.sort();

@@ -28,5 +28,7 @@ for(var a = 0; a < 10; a++){
 console.log('Global Scope: ' + a, b ,c);
 
 /**
- * Let and const has a block level scope and var has a function scope.
+ * A good reference about scope variables in js.
+ * 
+ * https://www.w3schools.com/js/js_let.asp
  */

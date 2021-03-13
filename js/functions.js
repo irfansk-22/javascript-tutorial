@@ -59,6 +59,11 @@ todo.delete = function () {
   console.log('Delete todo...');
 }
 
+todo.read = function () {
+  console.log('Reading');
+}
+
 todo.add();
 todo.edit(22);
 todo.delete();
+todo.read();

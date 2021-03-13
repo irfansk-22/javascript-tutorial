@@ -33,9 +33,12 @@ val = firstName[1];
 //indexOf()
 val = firstName.indexOf('a');
 val = firstName.lastIndexOf('l');
+console.log(val);
 
 //charAt()
 val = firstName.charAt('0');
+val = firstName.charAt(4);
+console.log(val);
 
 //Get last char
 val = firstName.charAt(firstName.length - 1);
@@ -43,12 +46,14 @@ val = firstName.charAt(firstName.length - 1);
 //substring()
 val = firstName.substring(0, 4);
 
-//slice()
+//slice() - negative number also work in slice unlike substring
 val = firstName.slice(0, 4);
-val = firstName.slice(-3);
+val = firstName.slice(-4);
+console.log(val);
 
 //split()
 val = str.split(' ');
+console.log(val);
 val = tags.split(',');
 
 //replace()
@@ -60,3 +65,11 @@ val = str.includes('foo');
 
 
 console.log(val);
+
+
+/**
+ * Difference between String.slice & String.substring?
+ * 
+ * https://stackoverflow.com/questions/2243824/what-is-the-difference-between-string-slice-and-string-substring
+ * 
+ */
