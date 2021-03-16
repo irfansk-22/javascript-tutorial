@@ -190,15 +190,3 @@ function filterTasks(e) {
 
     });
 }
-
-/**
- * known issues
- * 1) empty spaces is getting added in the list
- * 2) If i have two tasks of the same name then when i remvoe one it get removed from the dom
- * and from the local storage but the other task of that name stays in the dom however is getting
- * removed from the local storage.
- * 
- * request feature
- * 1) Add line through function when someone clicks on the task which is done.
- * 2) Deploy this proejct.
- */
