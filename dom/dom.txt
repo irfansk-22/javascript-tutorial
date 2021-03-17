@@ -3,3 +3,6 @@ DOCUMENT OBJECT MODEL
 1) Tree of nodes/elements created by browser.
 2) JavaScript can be used to read/write/manipulate to the Document
 3) Object Oriented Representation
+
+Follow the link to read more about the DOM,
+https://www.w3schools.com/js/js_htmldom.asp
