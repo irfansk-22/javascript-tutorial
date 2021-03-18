@@ -43,10 +43,10 @@ guessBtn.addEventListener('click', function() {
   } else {
 
     //Wrong number
-    guessesLeft -= 1;
+    guessesLeft--;
 
     if(guessesLeft === 0) {
-
+      
       //Game over - lost
       gameOver(false, `Game over you lost. The correct number was ${winningNum}`);
 
@@ -59,13 +59,14 @@ guessBtn.addEventListener('click', function() {
       //Clear input
       guessInput.value = '';
 
-      //Tell user its the wrong number
-      setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
-
+      //Give hint and Tell user its the wrong number
+      if (guess > winningNum) {
+        setMessage(`Too high! ${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+      } else if(guess < winningNum) {
+        setMessage(`Too low! ${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+      } 
     }
-
   }
-
 });
 
 //Game over
@@ -90,7 +91,6 @@ function gameOver(won , msg) {
   //Play again?
   guessBtn.value = 'Play Again';
   guessBtn.className += 'play-again';
-
 }
 
 //Get winnig number
@@ -100,10 +100,6 @@ function getRandomNum(min, max) {
 
 //Set Message
 function setMessage(msg, color) {
-
   message.style.color = color;
   message.textContent = msg;
-
 }
-
-
