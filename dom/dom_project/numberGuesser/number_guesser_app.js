@@ -1,7 +1,7 @@
 //Game values
 let min = 1, 
   max = 10,
-  winningNum = getRandomNum(min, max),
+  winningNum = Math.floor(Math.random() * (max - min + 1) + min),
   guessesLeft = 3;
 
 //UI Elements
@@ -42,11 +42,11 @@ guessBtn.addEventListener('click', function() {
 
   } else {
 
-    //Wrong number
+    //Wrong number entered
     guessesLeft--;
 
     if(guessesLeft === 0) {
-      
+
       //Game over - lost
       gameOver(false, `Game over you lost. The correct number was ${winningNum}`);
 
@@ -61,20 +61,20 @@ guessBtn.addEventListener('click', function() {
 
       //Give hint and Tell user its the wrong number
       if (guess > winningNum) {
-        setMessage(`Too high! ${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+        setMessage(`Your guess is too high, ${guessesLeft} guesses left`, 'red');
       } else if(guess < winningNum) {
-        setMessage(`Too low! ${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+        setMessage(`Your guess is too low, ${guessesLeft} guesses left`, 'red');
       } 
     }
   }
+  
 });
 
 //Game over
 function gameOver(won , msg) {
 
   let color;
-
-  (won === true) ? color = 'green' : color = 'red';
+  color = (won === true) ? 'green' : 'red';
 
   //Disable input
   guessInput.disabled = 'true';
@@ -91,11 +91,6 @@ function gameOver(won , msg) {
   //Play again?
   guessBtn.value = 'Play Again';
   guessBtn.className += 'play-again';
-}
-
-//Get winnig number
-function getRandomNum(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 //Set Message
