@@ -28,6 +28,7 @@ val = firstName.concat(' ', lastName);
 val = firstName.toUpperCase();
 val = firstName.toLowerCase();
 
+// we can treat string like read only arrays
 val = firstName[1];
 
 //indexOf()
@@ -40,13 +41,20 @@ val = firstName.charAt('0');
 val = firstName.charAt(4);
 console.log(val);
 
-//Get last char
+/**
+ * if the character or number that we are searching for 
+ * is not there then indexOf() and charAt() will return
+ * negative 1, that's the default.
+*/
+
+// Get last char of a string
 val = firstName.charAt(firstName.length - 1);
 
 //substring()
 val = firstName.substring(0, 4);
 
 //slice() - negative number also work in slice unlike substring
+//mostly use with arrays to pull things out of arrays
 val = firstName.slice(0, 4);
 val = firstName.slice(-4);
 console.log(val);

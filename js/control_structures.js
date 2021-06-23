@@ -34,6 +34,22 @@ const id = '100';
 //   console.log("INCORRECT");
 // }
 
+/**
+ * There are only six falsy values in JavaScript you 
+ * should be aware of:
+
+    false — boolean false
+    0 — number zero
+    “” — empty string
+    null
+    undefined
+    NaN — Not A Number
+
+// JavaScript — Double Equals vs. Triple Equals
+https://codeburst.io/javascript-double-equals-vs-triple-equals-61d4ce5a121a
+
+*/
+
 
 // Test if undefined
 // if (typeof id !== 'undefined') {
@@ -41,6 +57,8 @@ const id = '100';
 // } else {
 //   console.log(`No ID`);
 // }
+// typeof  returns a string, so you compare the result of it to a string.
+
 
 // GREATER OR LESS THAN
 // if(id <= 200) {
@@ -48,6 +66,8 @@ const id = '100';
 // } else {
 //   console.log('INCORRECT');
 // }
+// ❔ how we can check greater than or less then between two different types 
+
 
 //IF ELSE IF ELSE
 const color = 'red';

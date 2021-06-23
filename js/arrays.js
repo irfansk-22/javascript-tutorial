@@ -14,7 +14,15 @@ val = numbers.length;
 console.log(val);
 
 //Check if is array
-val = Array.isArray(numbers);
+/**
+ * This is useful when we're dealing with the DOM because
+ * we can return, for instance a node list from the DOM, 
+ * which is structured like an array, but it's not an actual
+ * array so we can't do certain things like foreach loops.
+ * so it's a good way to test to see if something is array.
+ * and then you can convert it into an array if you need to.
+ */
+ val = Array.isArray(numbers);
 
 //Get single value
 val = numbers[3];
@@ -73,7 +81,7 @@ function under50(num) {
 }
 
 val = numbers.find(under50);
-
+//will return first number in the array that is under 50
 
 console.log(numbers);
 console.log(val);

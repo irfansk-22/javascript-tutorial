@@ -43,6 +43,15 @@ console.log(val.toFixed(5)); //only works on number
 
 //TYPE COERCION
 
+/**
+ * Type Coercion refers to the process of automatic 
+ * or implicit conversion of values from one data 
+ * type to another. This includes conversion from 
+ * Number to String, String to Number, Boolean to 
+ * Number etc. when different types of operators 
+ * are applied to the values.
+ */
+
 const val1 = '5';
 const val2 = 6;
 

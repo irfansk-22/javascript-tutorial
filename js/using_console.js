@@ -1,3 +1,11 @@
+// single line comment
+
+/*
+multi
+line
+comments
+*/
+
 //Log to console
 
 console.log("Hello, JS!");
@@ -29,10 +37,3 @@ console.timeEnd("Hello");
 
 //In console.time and console.timeEnd "Hello" is a identifier that 
 //should be same, the identifier can be anything but should be same.
-
-
-/*
-multi
-line
-comments
-*/

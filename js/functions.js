@@ -27,9 +27,19 @@ const square = function (x = 3) {
 };
 
 // console.log(square(8));
-
+/**
+ * In most cases using an expression or a declaration
+ * isn't going to make much difference, but there are 
+ * times when expressions have some benefits to them
+ * when it comes to hoisting, closures and more advanced
+ * stuff.
+ */
 
 //IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+/**
+ * It's a function that we can declare and run at the 
+ * same time. 
+ */
 
 // (function () {
 //   console.log('IIFE Ran...');

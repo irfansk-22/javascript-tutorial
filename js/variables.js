@@ -1,26 +1,26 @@
 // There are mainly 3 ways to declare variables in js, var is 
 // present since creation of js but we should use let and const in
-// modern js becuase they have better advantages in terms of scope an all.
+// modern js becuase they have better advantages in terms of block level scope.
 
-// var name = 'John Doe';
-// console.log(name);
+var name = 'John Doe';
+console.log(name);
 
-// name = 'Steve Smith';
-// console.log(name);
+name = 'Steve Smith';
+console.log(name);
 
-// //Init var
-// var greeting;
+//Init var
+var greeting;
 
-// console.log(greeting);  //will get undefined
-// greeting = 'Hello';
-// console.log(greeting);
+console.log(greeting);  //will get undefined
+greeting = 'Hello';
+console.log(greeting);
 
 
-// // letters, numbers, underscore and $ 
-// // cannot start with a number 
+// letters, numbers, underscore and $ 
+// cannot start with a number 
 
-// // Multi word vars - camel case recommend in js 
-// // use pascal case in OOP var declaration
+// Multi word vars - camel case recommend in js 
+// use pascal case in OOP var declaration
  
 // var firstName = 'John'; //Camel case
 // var first_name = 'Sara';  //snake case
@@ -28,6 +28,11 @@
 
 
 // LET
+/**
+ * let seem very similar to var, it's identical on global scope
+ * but it has advantages when it come's to block level scope
+ */
+
 // let name;
 // name = 'John Doe';
 // console.log(name);
@@ -68,5 +73,3 @@ console.log(numbers);
 
 // WHEN WE DECLARE AN OBJECT OR AN ARRAY AS CONSTANT WE CAN'T CHANGE IT TO DIFFERENT OBJECT
 // OR ARRAY BUT WE CAN CHANGE(MUTATE) THE CONTENT(DATA) INSIDE THE THEM.
-
-

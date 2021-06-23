@@ -1,7 +1,7 @@
 // Global scope
 var a = 1;
 let b = 2;
-const c = 3; 
+const c = 3;
 
 // function test() {
 //   var a = 4;
@@ -17,18 +17,19 @@ const c = 3;
 //   var a = 4;
 //   let b = 5;
 //   const c = 6;
-  
+
 //   console.log('Block Scope: ', a, b, c);
 // }
 
-for(var a = 0; a < 10; a++){
+for (var a = 0; a < 10; a++) {
   console.log(`Loop: ${a}`);
-} 
+}
 
-console.log('Global Scope: ' + a, b ,c);
+console.log('Global Scope: ' + a, b, c);
 
 /**
+ * let and const has block level scope and var has function scope.
+ *
  * A good reference about scope variables in js.
- * 
  * https://www.w3schools.com/js/js_let.asp
  */

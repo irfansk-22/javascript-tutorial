@@ -13,6 +13,8 @@ val = today.getMinutes();
 val = today.getSeconds();
 val = today.getMilliseconds();
 val = today.getTime();
+// In JavaScript, a time stamp is the number of milliseconds
+// that have passed since January 1, 1970.
 
 console.log(val);
 
