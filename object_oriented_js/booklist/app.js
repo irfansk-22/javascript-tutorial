@@ -55,7 +55,10 @@ UI.prototype = {
 
   deleteBook: function (target) {
     if (target.className === 'delete') {
-      target.parentElement.parentElement.remove();
+      if (confirm('Are you sure you want to remove this field')) {
+        target.parentElement.parentElement.remove();
+        this.showAlert('Book Removed!', 'success'); //TODO:understand properly use of (this) here
+      }
     }
   },
 
@@ -64,7 +67,7 @@ UI.prototype = {
     document.getElementById('author').value = '';
     document.getElementById('isbn').value = '';
   },
-}
+};
 
 // EVENT LISTENER FOR ADD
 document.getElementById('book-form').addEventListener('submit', function (e) {
@@ -92,9 +95,5 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 // EVENT LISTENER FOR DELETE
 document.getElementById('book-list').addEventListener('click', function (e) {
   const ui = new UI();
-
-  if (confirm('Are you sure you want to remove this field')) {
-    ui.deleteBook(e.target);
-    ui.showAlert('Book Removed!', 'success');
-  }
+  ui.deleteBook(e.target);
 });
