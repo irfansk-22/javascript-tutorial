@@ -14,16 +14,10 @@ class Customer extends Person {
     super(firstName, lastName);
 
     this.phone = phone;
-    this.membership = membership;
-  }
-
-  static getMembershipCost() {
-    return 500;
+    this.membership = memberhsip;
   }
 }
 
 const john = new Customer('John', 'Doe', '555-555', 'standard');
 
 console.log(john);
-console.log(john.greeting());
-console.log(Customer.getMembershipCost());
