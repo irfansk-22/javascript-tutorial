@@ -1,0 +1,35 @@
+/**
+
+🔸What is Ajax?
+
+It's not a language or framework or library, It's a 
+set of web technologies to send and receive data from 
+the client and server.
+
+- Asynchronous JavaScript & XML
+- Set of web technologies
+- Send & Receive data asynchronously
+- Does not interfere with the current page
+- JSON has replaces XML for most part
+
+🔸XmlHttpRequest(XHR) Object
+
+- API in the form of an object
+- Provided by the browsers JS enviornment
+- Methods transfer data between client/server
+- Can be used with other protocols than HTTP 
+- Can work with data other than XML(JSON, plain text)
+
+🔸Libraries and Other Methods
+
+- Fetch API
+- Axios
+- Superagent
+- jQuery
+- Node HTTP
+
+
+Further reference,
+https://www.w3schools.com/xml/ajax_intro.asp
+
+ */

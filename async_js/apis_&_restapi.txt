@@ -1,0 +1,57 @@
+🔸 What is An API(Application Programming Interface)?
+
+1) Similar to how UIs help people use programs, APIs 
+help programs interact with other programs. APIs are
+tools that computers use to communicate with one 
+another, in part to send and receive data.
+
+2) There's all kinds of APIs.
+We're specifically talking about Web APIs, but there's 
+also APIs in your computer and your operating system 
+and your smartphone, even some refrigerators.
+
+There's many, many devices that have different types 
+of APIs. So this is very generalized, but it's 
+essentially a contract provided by one piece of 
+software to another,and it usually consists of a 
+structured request in a structured response.
+
+
+🔸 REST API's
+
+1) Representational State Transfer
+2) Architecture style for designing networked applications
+3) Relies on a stateless, client-server protocol, almost 
+always HTTP
+4) Treats server objects as resources that can be created
+or destroyed
+5) Can be used by virtually any programming language
+6) All API's have their own rules and structure
+
+
+🔸 HTTP Requests
+
+- GET: Retrieve data from a specified resource
+- POST: Submit data to be processed to a specified resource
+- PUT: Update a specified resource
+- DELETE: Delete a specified resource
+
+HEAD: Same as GET but does not return a body
+OPTIONS: Returns the supported HTTP method
+PATCH: Update partial resources
+
+
+🔸 API Endpoints
+
+When you have some kind of API, whether it's your own 
+or whether it's an external API, you're going to have 
+something called endpoints and endpoints of the URL's 
+that we access to do certain things.
+
+GET    https://someurl.com/api/users   //Get all users
+GET    https://someurl.com/api/users/1 //Get single user
+POST   https://someurl.com/api/users   //Add user
+PUT    https://someurl.com/api/users/1 //Update user
+DELETE https://someurl.com/api/users   //Delete user
+
+

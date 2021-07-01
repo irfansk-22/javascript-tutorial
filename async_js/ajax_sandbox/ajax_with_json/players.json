@@ -1,0 +1,26 @@
+[
+  {
+    "fab4": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "jersy_no": "18"
+  },
+  {
+    "fab4": 2,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "jersy_no": "49"
+  },
+  {
+    "fab4": 3,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "jersy_no": "22"
+  }, 
+  {
+    "fab4": 4,
+    "name": "Joe Root",
+    "country": "England",
+    "jersy_no": "66"
+  }
+]
